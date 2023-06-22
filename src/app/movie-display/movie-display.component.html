@@ -1,0 +1,24 @@
+<!-- <p>movie title</p>
+<p>{{movie}}</p>
+ -->
+<div
+[class.red-border]="movie.stars < 4"
+
+[style.border]="tileBorder" style="width: 10rem;" class="card bg-dark text-light">
+  
+ <img [src]="movie.image" alt="">
+  <div class="card-body">
+    <h6>{{movie.title}}</h6>
+
+
+    <button 
+    (click)="onClick()"
+
+    
+    [class]="'btn btn-primary '+getBtnTextColorClass()"
+  
+    >
+    rent
+    </button>
+  </div>
+</div>
